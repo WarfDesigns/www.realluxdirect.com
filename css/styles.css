@@ -1,3 +1,22 @@
+@media (max-width:600px) {
+    
+:root {
+    --appmenu-h: 60px; /* Height of the app menu */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #000;
+}
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
 .three-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -8,7 +27,25 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
-  /* App Menu Styles */
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* App Menu Styles */
   .appMenu {
       list-style: none;
       padding-top: 10px;
@@ -42,7 +79,7 @@
       box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
       z-index: 2147483647;     /* max priority */
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
       justify-content: center;
       margin: 0px;
@@ -55,3 +92,213 @@
       color: black;
       text-decoration: none;
   }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    :root {
+    --appmenu-h: 60px; /* Height of the app menu */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #000;
+}
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.five-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* App Menu Styles */
+  .appMenu {
+      list-style: none;
+      padding-top: 10px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .appMenu a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 0px;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .appmenucontainer {
+      position: fixed;         /* <-- stays pinned */
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      min-height: var(--appmenu-h);
+      background-color: rgb(226, 253, 221);
+      color: black;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+      z-index: 2147483647;     /* max priority */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+      text-decoration: none;
+      padding-bottom: 13px;
+      padding-top: 13px;
+  }
+
+  .appmenucontainer a {
+      color: black;
+      text-decoration: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+:root {
+    --appmenu-h: 60px; /* Height of the app menu */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #000;
+}
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.five-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* App Menu Styles */
+  .appMenu {
+      display: none;
+  }
+
+  .appmenucontainer {
+      display: none;
+  }
+}
+
+/* Extra Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+:root {
+    --appmenu-h: 60px; /* Height of the app menu */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #000;
+}
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.five-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* App Menu Styles */
+  .appMenu {
+      display: none;
+  }
+
+  .appmenucontainer {
+      display: none;
+  }
+}
