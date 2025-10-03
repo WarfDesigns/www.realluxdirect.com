@@ -20,7 +20,7 @@ function loadTemplate(url, elementId) {
 
 // Load templates when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-  loadTemplate('/templates/menu.html', 'nav');
+  loadTemplate('/templates/menu.html', 'menu');
   loadTemplate('/templates/footer.html', 'footer');
   loadTemplate('/templates/app-menu.html', 'appMenu');
   loadTemplate('/templates/header.html', 'header');

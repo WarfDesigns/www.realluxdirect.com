@@ -51,6 +51,12 @@ main {
     transition: background-color 0.3s ease;
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px
+}
+
 /* App Menu Styles */
   .appMenu {
       display: none;
