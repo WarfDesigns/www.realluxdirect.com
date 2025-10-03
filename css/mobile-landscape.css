@@ -16,6 +16,9 @@ main {
     max-width: 1200px;
     margin: auto;
 }
+.large-text {
+    font-size: 30px;
+}
 .three-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

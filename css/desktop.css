@@ -12,6 +12,9 @@ body {
     background-color: #f4f4f4;
     color: #000;
 }
+.large-text {
+    font-size: 100px;
+}
 main {
     padding: 20px;
     max-width: 1200px;
