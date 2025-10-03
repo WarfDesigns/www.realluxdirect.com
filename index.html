@@ -20,7 +20,17 @@
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/styles.css">
+          <!-- Base styles (mobile-first, always load) -->
+        <link rel="stylesheet" href="/css/mobile.css">
+
+        <!-- Tablet overrides -->
+        <link rel="stylesheet" href="/css/mobile-landscape.css" media="(min-width: 600px) and (max-width: 899px)">
+
+        <!-- Desktop overrides -->
+        <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 900px) and (max-width: 1199px)">
+
+        <!-- Very Large Screens -->
+        <link rel="stylesheet" href="/css/large-screen.css" media="(min-width: 1200px)">
           <!-- Structured Data (JSON-LD for Organization & eCommerce) -->
         <script type="application/ld+json">
         {

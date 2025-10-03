@@ -1,0 +1,59 @@
+
+
+
+/* Extra Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+:root {
+    --appmenu-h: 60px; /* Height of the app menu */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #000;
+}
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.five-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* App Menu Styles */
+  .appMenu {
+      display: none;
+  }
+
+  .appmenucontainer {
+      display: none;
+  }
+}
